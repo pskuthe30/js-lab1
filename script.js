@@ -25,13 +25,15 @@ let counter = 0;
 
 while (true) {
   let randomNumber = Math.floor(Math.random() * 10 + 1);
-  console.log(`${randomNumber}`);
+  //console.log(`${randomNumber}`);
   if (randomNumber !== 5) {
     counter++;
     console.log(`${randomNumber} is !==5`);
   } else {
     counter++;
     console.log(`${randomNumber} is == 5`);
+
+    console.log(`It took ${counter} iterations to randomly generate 5`);
+    break;
   }
-  break;
 }
