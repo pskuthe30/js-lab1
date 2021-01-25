@@ -22,17 +22,16 @@ for (let i = 0; i < lifeEvents.length; i++) {
   console.log(lifeEvents[i]);
 }
 let counter = 0;
-let randomNumber = Math.floor(Math.random() * 10);
-console.log(`${randomNumber}`);
-//while (true) {
-//let randomNumber = Math.floor(Math.random() * 10);
-//console.log("${randomNumber}");
-//if (randomNumber != 5) {
-//counter++;
-//console.log(`${randomNumer} is !==5`);
-//} else {
-//counter++;
-//console.log(`${randomNumer} is 5==5`);
-//}
-//break;
-//}
+
+while (true) {
+  let randomNumber = Math.floor(Math.random() * 10 + 1);
+  console.log(`${randomNumber}`);
+  if (randomNumber !== 5) {
+    counter++;
+    console.log(`${randomNumber} is !==5`);
+  } else {
+    counter++;
+    console.log(`${randomNumber} is == 5`);
+  }
+  break;
+}
